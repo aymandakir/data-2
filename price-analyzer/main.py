@@ -145,12 +145,12 @@ def export_summary_csv(metrics_dict, output_path):
     for ticker, metrics in metrics_dict.items():
         rows.append({
             'Ticker': ticker,
-            'Start Price': metrics['start_price'],
-            'End Price': metrics['end_price'],
-            'Return %': metrics['total_return'],
-            'Max Price': metrics['max_price'],
-            'Min Price': metrics['min_price'],
-            'Volatility': metrics['volatility']
+            'Start Price': float(metrics['start_price']),
+            'End Price': float(metrics['end_price']),
+            'Return %': float(metrics['total_return']),
+            'Max Price': float(metrics['max_price']),
+            'Min Price': float(metrics['min_price']),
+            'Volatility': float(metrics['volatility'])
         })
     
     df = pd.DataFrame(rows)
