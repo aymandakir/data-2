@@ -1,12 +1,4 @@
-# Price Analyzer Dependencies
-
-# Data fetching
-yfinance>=0.2.36
-requests>=2.31.0
-
-# Data processing
-pandas>=2.1.0
-
-# Visualization
-matplotlib>=3.8.0
-numpy>=1.26.0
+yfinance
+pandas
+matplotlib
+numpy
